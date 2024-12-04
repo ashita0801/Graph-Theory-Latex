@@ -41,7 +41,7 @@
 % Title information
 \title{\Large\textbf{Graph Theory Visualization}\\[0.5em]
        \normalsize A Visual Guide to Graph Theory Concepts}
-\author{\textbf{Your Name}\\
+\author{\textbf{Ashita Phulwani}\\
         Department of Mathematics}
 \date{\today}
 
@@ -132,7 +132,7 @@ Important properties of graphs include:
 
 \section{Graph Coloring}
 \begin{tcolorbox}[theorembox]
-A proper vertex coloring is an assignment of colors to vertices such that no adjacent vertices share the same color.
+A proper vertex coloring is an assignment of colors to vertices such that no adjacent vertices share the same color. The chromatic number \(\chi(G)\) of a graph G is the minimum number of colors needed for a proper coloring.
 \end{tcolorbox}
 
 \begin{center}
@@ -148,12 +148,73 @@ A proper vertex coloring is an assignment of colors to vertices such that no adj
     \draw[thick] (C) -- (A);
     
     % Add chromatic number
-    \node[text=black] at (1,-1) {Chromatic number = 3};
+    \node[text=black] at (1,-1) {Chromatic number \(\chi(G) = 3\)};
 \end{tikzpicture}
 \end{center}
 
-\begin{property}[Chromatic Number]
-The chromatic number of a graph is the minimum number of colors needed for a proper vertex coloring.
+\begin{property}[Coloring Properties]
+For any graph G:
+\begin{itemize}
+    \item The chromatic number \(\chi(G)\) is at least 2 for any graph with at least one edge
+    \item A graph is bipartite if and only if \(\chi(G) = 2\)
+    \item For a complete graph K\(_{n}\), \(\chi(K_n) = n\)
+\end{itemize}
 \end{property}
 
+\section{Special Graph Types}
+\begin{tcolorbox}[theorembox]
+Common special types of graphs include:
+\begin{itemize}
+    \item \textbf{Complete Graphs}: Every vertex is connected to every other vertex
+    \item \textbf{Cycle Graphs}: A single cycle through all vertices
+    \item \textbf{Tree Graphs}: Connected graphs without cycles
+\end{itemize}
+\end{tcolorbox}
+
+\begin{example}[Complete Graph K4]
+\begin{center}
+\begin{tikzpicture}
+    % Create vertices
+    \node[draw, circle, fill=lightblue!20] (A) at (0,0) {1};
+    \node[draw, circle, fill=lightblue!20] (B) at (2,0) {2};
+    \node[draw, circle, fill=lightblue!20] (C) at (2,2) {3};
+    \node[draw, circle, fill=lightblue!20] (D) at (0,2) {4};
+    
+    % Draw all possible edges
+    \draw[thick] (A) -- (B);
+    \draw[thick] (B) -- (C);
+    \draw[thick] (C) -- (D);
+    \draw[thick] (D) -- (A);
+    \draw[thick] (A) -- (C);
+    \draw[thick] (B) -- (D);
+\end{tikzpicture}
+\end{center}
+\end{example}
+
+\section{Applications}
+\begin{tcolorbox}[theorembox]
+Graph theory has numerous real-world applications:
+\begin{itemize}
+    \item \textbf{Network Design}: Communication and transportation networks
+    \item \textbf{Schedule Planning}: Course scheduling, resource allocation
+    \item \textbf{Social Networks}: Analyzing relationships and connections
+    \item \textbf{Circuit Design}: Electronic circuit layout and optimization
+\end{itemize}
+\end{tcolorbox}
+
+\section{Exercises}
+\begin{enumerate}
+    \item Find the chromatic number of the complete graph K\(_5\).
+    \item Prove that any tree with more than one vertex has chromatic number 2.
+    \item Draw a graph with chromatic number 4 that is not a complete graph.
+    \item For the bipartite graph shown earlier, verify that its chromatic number is 2.
+\end{enumerate}
+
+\section{Conclusion}
+\begin{tcolorbox}[theorembox]
+Graph theory provides powerful tools for modeling and solving real-world problems. Understanding basic concepts like coloring, connectivity, and special graph types forms the foundation for more advanced applications in computer science, networking, and optimization.
+\end{tcolorbox}
+
 \end{document}
+
+
