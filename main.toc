@@ -1,5 +1,3 @@
 \contentsline {section}{\numberline {1}Basic Graph Concepts}{2}{section.1}%
-\contentsline {section}{\numberline {2}Euler Paths}{2}{section.2}%
-\contentsline {section}{\numberline {3}Network Flow}{2}{section.3}%
-\contentsline {section}{\numberline {4}Spanning Trees}{2}{section.4}%
-\contentsline {section}{\numberline {5}Exercises}{2}{section.5}%
+\contentsline {section}{\numberline {2}Graph Properties}{2}{section.2}%
+\contentsline {section}{\numberline {3}Graph Coloring}{2}{section.3}%
